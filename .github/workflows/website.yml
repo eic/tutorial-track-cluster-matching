@@ -8,9 +8,9 @@ on:
 jobs:
   build-website:
     if: ${{ !endsWith(github.repository, '/styles') }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
-      RSPM: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
+      RSPM: "https://packagemanager.rstudio.com/cran/__linux__/jammy/latest"
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     defaults:
       run:
@@ -23,7 +23,7 @@ jobs:
           bundler-cache: true
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -33,10 +33,10 @@ jobs:
 
       - name: Install Python modules
         run: |
-          python3 -m pip install --upgrade pip setuptools wheel pyyaml==5.3.1 requests
+          python3 -m pip install --upgrade pip setuptools wheel pyyaml requests
 
       - name: Checkout the lesson
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
@@ -55,7 +55,7 @@ jobs:
 
       - name: Restore R Cache
         if: steps.check-rmd.outputs.count != 0
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
@@ -86,14 +86,14 @@ jobs:
           while read -r cmd
           do
             eval sudo $cmd || echo "Nothing to update"
-          done < <(Rscript -e 'cat(remotes::system_requirements("ubuntu", "20.04"), sep = "\n")')
+          done < <(Rscript -e 'cat(remotes::system_requirements("ubuntu", "22.04"), sep = "\n")')
 
       - name: Render the markdown and confirm that the site can be built
         run: make site
 
       - name: Checkout github pages
         if: ${{ github.event_name == 'push' && steps.check-rmd.outputs.count != 0 && github.ref != 'refs/heads/gh-pages'}}
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
