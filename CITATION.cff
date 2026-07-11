@@ -1,0 +1,23 @@
+# This CITATION.cff file provides information used to cite this lesson.
+# Visit https://citation-file-format.github.io/ for the format reference,
+# and update the author list and other fields as the lesson develops.
+
+cff-version: 1.2.0
+title: 'EIC Tutorial: Track-Cluster Matching and PODIO'
+message: >-
+  Please cite this lesson using the information in this file
+  when you refer to it in publications, and/or if you
+  re-use, adapt, or expand on the content in your own
+  training material.
+type: dataset
+authors:
+  - given-names: Derek
+    family-names: Anderson
+  - name: The ePIC Collaboration
+abstract: >-
+  An ePIC tutorial that introduces the PODIO interface to the EDM4eic data model and shows
+  how to use it in an analysis setting: matching tracks to calorimeter clusters, identifying
+  electrons with an E/p cut, reconstructing J/psi from electron pairs, and validating the
+  result against Monte-Carlo truth via relations and associations. Built with The Carpentries
+  Workbench.
+license: CC-BY-4.0

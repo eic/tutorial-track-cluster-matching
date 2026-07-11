@@ -1,0 +1,78 @@
+#------------------------------------------------------------
+# Values for this lesson.
+#------------------------------------------------------------
+
+# Which carpentry is this (swc, dc, lc, or cp)?
+# swc: Software Carpentry
+# dc: Data Carpentry
+# lc: Library Carpentry
+# cp: Carpentries (to use for instructor training for instance)
+# incubator: The Carpentries Incubator
+#
+# This option supports custom types so lessons can be branded
+# and themed with your own logo and alt-text (see `carpentry_description`)
+# See https://carpentries.github.io/sandpaper-docs/editing.html#adding-a-custom-logo
+carpentry: 'incubator'
+
+# Alt-text description of the lesson.
+carpentry_description: 'PODIO and track-cluster matching for ePIC analysis'
+
+# Overall title for pages.
+title: 'EIC Tutorial: Track-Cluster Matching and PODIO'
+
+# Date the lesson was created (YYYY-MM-DD, this is empty by default)
+created: 2026-06-11
+
+# Comma-separated list of keywords for the lesson
+keywords: 'PODIO, EDM4eic, EDM4hep, track-cluster matching, J/psi, EIC, ePIC, EICrecon, analysis'
+
+# Life cycle stage of the lesson
+# refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
+# possible values: pre-alpha, alpha, beta, stable
+life_cycle: 'pre-alpha'
+
+# License of the lesson
+license: 'CC-BY 4.0'
+
+# Link to the source repository for this lesson
+source: 'https://github.com/eic/tutorial-track-cluster-matching'
+
+# Default branch of your lesson
+branch: 'main'
+
+# Who to contact if there are any issues
+contact: 'derek.murphy.anderson@protonmail.com'
+
+# Navigation ------------------------------------------------
+#
+# Use the following menu items to specify the order of
+# individual pages in each dropdown section. Leave blank to
+# include all pages in the folder.
+
+# Order of episodes in your lesson
+episodes:
+- 01-introduction.md
+- 02-podio.md
+- 03-track-cluster.md
+- 04-truth-reco.md
+
+# Information for Learners
+learners:
+- setup.md
+- full-example-script.md
+- t-tree-reader.md
+- r-data-frame.md
+- reference.md
+
+# Information for Instructors
+instructors:
+- instructor-notes.md
+
+# Learner Profiles
+profiles:
+- learner-profiles.md
+
+# Customisation ---------------------------------------------
+#
+# This space below is where custom yaml items (e.g. pinning
+# sandpaper and varnish versions) should live
