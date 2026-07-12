@@ -489,7 +489,7 @@ Copy and paste these snippets just after our helper functions above.
           used_clusters.insert(cluster.getObjectID());
         }
       }
-    }
+    } // end track loop
 ```
 
 As always, run your code after the changes to make sure things work.
