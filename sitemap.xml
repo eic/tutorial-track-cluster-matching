@@ -142,10 +142,16 @@
     <loc>https://eic.github.io/tutorial-track-cluster-matching/_layouts/workshop.html</loc>
   </url>
   <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/aio.html</loc>
+  </url>
+  <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/citation.html</loc>
   </url>
   <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/full-example-script.html</loc>
+  </url>
+  <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/images.html</loc>
   </url>
   <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/index.html</loc>
@@ -172,13 +178,25 @@
     <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/citation.html</loc>
   </url>
   <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/full-example-script.html</loc>
   </url>
   <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/profiles.html</loc>
@@ -191,6 +209,12 @@
   </url>
   <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor/t-tree-reader.html</loc>
+  </url>
+  <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://eic.github.io/tutorial-track-cluster-matching/key-points.html</loc>
   </url>
   <url>
     <loc>https://eic.github.io/tutorial-track-cluster-matching/profiles.html</loc>
