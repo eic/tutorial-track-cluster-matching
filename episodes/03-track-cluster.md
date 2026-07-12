@@ -65,6 +65,7 @@ ep_max_def    = 1.2
 mass_min_def  = 2.5
 mass_max_def  = 3.5
 
+TH1.SetDefaultSumw2(True)
 
 def FindJPsi(
     in_file   = in_file_def, 
@@ -147,6 +148,7 @@ And for C++:
 #include <vector>
 #include <utility>
 
+TH1::SetDefaultSumw2(kTRUE);
 
 void FindJPsi(
   const std::string& in_file   = "lAger3.6.1-1.0_jpsi_10x130_hiAcc_run1.0009.eicrecon.edm4eic.root",
