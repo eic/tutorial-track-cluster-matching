@@ -65,7 +65,7 @@ ep_max_def    = 1.2
 mass_min_def  = 2.5
 mass_max_def  = 3.5
 
-TH1.SetDefaultSumw2(True)
+ROOT.TH1.SetDefaultSumw2(True)
 
 def FindJPsi(
     in_file   = in_file_def, 
