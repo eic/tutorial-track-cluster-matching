@@ -23,7 +23,7 @@ A _data model_ is how we represent our data in our software.  In other words, a 
 set of data structures that we use to pass information between different parts of our
 software stack (DD4hep, EICrecon, etc.) and between different algorithms in those parts.
 
-![Overview of the EDM4eic data model](./../assets/img/tutorial/EDM4eicOverview.png)
+![Overview of the EDM4eic data model](./../fig/EDM4eic_v8100_diagram.png)
 
 Our data model is [EDM4eic][edm4eic] (**E**vent **D**ata **M**odel for EIC), and is summarized
 in the above figure.  Each box corresponds to a data structure, and the arrows correspond to
